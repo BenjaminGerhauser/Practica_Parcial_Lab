@@ -88,7 +88,16 @@ namespace Practica_Parcial_Lab
             return tabla;
         }
 
+        public DataTable getTabla()
+        {
+            tabla = new DataTable();
 
+            string sql = "SELECT * FROM Sectores";
+            string cadena = "Data Source=Empresita.db";
+            SQLiteDataAdapter ada = new SQLiteDataAdapter(sql, cadena);
+            ada.Fill(tabla);
+            return tabla;
+        }
 
 
 

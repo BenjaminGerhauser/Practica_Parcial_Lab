@@ -22,7 +22,8 @@ namespace Practica_Parcial_Lab
         private void Form1_Load(object sender, EventArgs e)
         {
             empresita em = new empresita();
-            DataTable tabla = em.getData();
+            //DataTable tabla = em.getData();
+            DataTable tabla = em.getTabla();
 
             CboSector.DisplayMember = "Nombre";
             CboSector.ValueMember = "SectorID";
